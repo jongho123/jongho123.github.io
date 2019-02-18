@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Example post
+title: Hello World post
 cover: cover.jpg
-date:   2013-12-09 12:00:00
-categories: posts
+date:   2017-12-09
+summary: this temp project
 ---
 
 ## Introducing Flex, a Jekyll theme
