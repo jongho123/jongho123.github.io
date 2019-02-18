@@ -1,3 +1,5 @@
 name: Flex
 markdown: redcarpet
 pygments: true
+
+theme: jekyll-theme-minimal
