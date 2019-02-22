@@ -2,6 +2,7 @@
   <div id="sidebar-button">
     <img src="/images/sidebar-button.png">
   </div>
+  <!--
   <div id="post-info">
     <div id="cover-photo-container">
       <img id="cover-photo" src="/images/{{ page.cover }}">
@@ -11,14 +12,14 @@
       <span id="date">{{ page.date | date_to_string }}</span>
     </div>
   </div>
+  -->
 
   <div class="post">
     {{ content }}
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
-      <span id="social">Find me on <a href="">Twitter</a>!</span>
+      <span id="pub-date">Last modified at {{ page.last_modified_at | date: "%Y-%m-%d" }}</span>
     </p>
   </div>
 </div>
