@@ -1,6 +1,8 @@
 name: Flex
 markdown: kramdown 
 highlighter: rouge
+
+# 사이트 url 방식을 설정
 permalink: none
 timezone: Asia/Seoul
 
