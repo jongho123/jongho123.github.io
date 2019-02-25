@@ -18,7 +18,7 @@ html, body {
 body {
   color: #4a4a4a;
   background-color: #fafbfc;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Nanum Gothic Coding', Arial, sans-serif;
   font-weight: 400;
   font-size: 0.85em;
   overflow: hidden;
@@ -174,10 +174,22 @@ a:hover {
 }
 
 .post p {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: 'Nanum Gothic Coding', Arial, sans-serif;
   font-size: 17px;
   margin-bottom: 1.45em;
   text-align: justify;
+}
+
+.footnotes p {
+  text-align: left;
+  font-size: 1em;
+}
+
+a.footnote:before {
+  content: "[";
+}
+a.footnote:after {
+  content: "]";
 }
 
 .post ul, .post ol {
@@ -214,6 +226,7 @@ a:hover {
 
 .sidebar,
 .content {
+  font-size: 1.1em;
   vertical-align: top;
   height: 100%;
   -webkit-overflow-scrolling: touch;
