@@ -25,6 +25,7 @@ Codewars: [@jongho123](https://www.codewars.com/users/jongho123)
 - 최근...ㅠㅠ
 - 애완동물 자동 급식기 개발 ([Report]()) ([Source]())
 - STT 를 이용한 음성 내용 검색 앱
+  ([Report](/posts/sound-tag.html)
 - 키보드 앱의 오토마타 코드 리팩토링
   ([Report](/posts/nurumi-refactoring.html))
   ([Source](https://github.com/2015nlpcapstone/Nurumi))
