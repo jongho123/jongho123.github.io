@@ -32,6 +32,8 @@ Codewars: [@jongho123](https://www.codewars.com/users/jongho123)
   ([Report](/posts/nurumi-refactoring.html))
   ([Source](https://github.com/2015nlpcapstone/Nurumi))
 - 음악 추천 앱
+  ([Report](/posts/recommend-indie.html))
+  ([Source](https://github.com/jongho123/Recommandation-Indie))
 
 ## Education
 - 국민대학교 (2010.03 ~ 2016.08)
