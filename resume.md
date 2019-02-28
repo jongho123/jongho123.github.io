@@ -4,42 +4,248 @@ date: 2019-02-16
 last_modified_at: 2019-02-22
 ---
 
-## 임 종 호 (Lim Jongho)
+{::options parse_block_html="true" /}
 
-Email : lbo4126@gmail.com  
-Github: [@jongho123](http://github.com/jongho123)  
-Codewars: [@jongho123](https://www.codewars.com/users/jongho123)  
+{::comment}
+인물소개란. 반응형 2개의 컬럼으로 되어있음.
+왼쪽 컬럼에 이름, 오른쪽 컬럼에 연락처와 깃허브 링크 등이 있음.
+{:/comment}
 
-## Skills
-- Level 3
+{: .ui .header}
+# Profile
+
+<div class="ui divided grid container">
+
+<div class="six wide column">
+임 종 호 (Lim Jongho)
+</div>
+
+<div class="ten wide column">
+  <div class="ui list">
+  <div class="item">
+  <i class="mail icon"></i>
+  lbo4126@gmail.com
+  </div>
+  <div>
+  <i class="github icon"></i>
+  [Github](https://github.com/jongho123)
+  </div>
+  </div>
+</div>
+</div>
+
+{::comment}
+기술 소개란. 반응형 3개의 컬럼으로 되어있음.
+상, 중, 하 순서대로 배치함.
+{:/comment}
+
+<div class="ui hidden divider"></div>
+
+{: .ui .header}
+# Skiils
+
+<div class="ui divided three columns grid container">
+  <div class="column">
+
+  {: .ui .red .tag .label}
+  잘 이해하고 있음
+
+  {: .ui list}
   - Java
-- Level 2
+  </div>
+
+  <div class="column">
+
+  {: .ui .blue .tag .label}
+  프로젝트 경험이 있음
+
+  {: .ui .list}
   - Node.js / Express
-  - Andorid
-- Level 1
-  - Angular
+  - Android
+  </div>
+
+  <div class="column">
+
+  {: .ui .green .tag .label}
+  간단히 사용해 봄
+
+  {: .ui .list}
   - HTML / CSS
+  - MongoDB
   - Mysql
+  </div>
+</div>
 
-## Project
-- 최근...ㅠㅠ
-- 애완동물 자동 급식기 개발 
-  ([Report](/posts/happy-hog.html))
-  ([Source](https://github.com/MyHappyHog/ProjectPrototype))
-- STT 를 이용한 음성 내용 검색 앱
-  ([Report](/posts/sound-tag.html))
-- 키보드 앱의 오토마타 코드 리팩토링
-  ([Report](/posts/nurumi-refactoring.html))
-  ([Source](https://github.com/2015nlpcapstone/Nurumi))
-- 음악 추천 앱
-  ([Report](/posts/recommend-indie.html))
-  ([Source](https://github.com/jongho123/Recommandation-Indie))
+{::comment}
+프로젝트 소개란. 반응형 2개의 컬럼으로 되어있음.
+왼쪽에는 프로젝트 이름과 오른쪽에는 설명, 그리고 링크로 이루어져 있음.
+{:/comment}
 
-## Education
-- 국민대학교 (2010.03 ~ 2016.08)
-    - 컴퓨터공학부
+<div class="ui hidden divider"></div>
 
-## Opensource
-- DHT-sensor-library([Link](https://github.com/adafruit/DHT-sensor-library))
-    - 온, 습도 센서 라이브러리
-    - 소소하게 코드 단 한 줄(한 단어?) 기여.
+{: .ui .header}
+# Project
+<div class="ui divided grid container">
+
+{::comment}
+Happyhoghouse 프로젝트
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+  
+{: .ui .header}
+### Happy hog house
+2015.11 ~ 2016.02
+  </div>
+
+  <div class="ten wide column">
+
+  {: .ui .list}
+  - 고슴도치 관리 자동화부터 시작
+  - 반려동물의 관리 자동화가 목표
+
+  <a class="ui black horizontal label" href="/posts/happy-hog.html">개발 내용</a>
+  <a class="ui black horizontal label" href="https://github.com/MyHappyHog/ProjectPrototype">소스 코드</a>
+  </div>
+</div>
+
+{::comment}
+키보드 앱 리팩토링 프로젝트
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+
+{: .ui .header}
+### 키보드 앱 리팩토링
+2015.10 ~ 2015.11
+  </div>
+
+  <div class="ten wide column">
+
+  {: .ui .list}
+  - 2학기 졸업프로젝트로 다른 팀에 합류
+  - 1학기에 만들었던 키보드 앱의 리팩토링
+  - 코드의 양을 절반 이상 줄일 수 있었음.
+  - 자바 패턴 중 상태 패턴 사용
+
+  <a class="ui black horizontal label" href="/posts/nurumi-refactoring.html">개발 내용</a>
+  <a class="ui black horizontal label" href="https://github.com/2015nlpcapstone/Nurumi">소스 코드</a>
+  </div>
+</div>
+
+{::comment}
+녹음한 음성에서의 단어 검색 앱 프로젝트
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+
+{: .ui .header}
+### Sound tag
+2015.08 ~ 2015.09
+  </div>
+
+  <div class="ten wide column">
+
+  {: .ui .list}
+  - 녹음한 음성에서의 단어 검색 앱.
+  - 안드로이드와 간단한 단어 빈도수를 추출해주는 서버 개발.
+  - Node.js / Express / Android
+
+  <a class="ui black horizontal label" href="/posts/sound-tag.html">개발 내용</a>
+  </div>
+</div>
+
+{::comment}
+음악 추천 앱 프로젝트
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+
+{: .ui .header}
+### Recommend Indie
+2015.04 ~ 2015.06
+  </div>
+
+  <div class="ten wide column">
+
+  {: .ui .list}
+  - 음악 추천 API를 이용해 비슷한 음악을 추천해주는 앱.
+  - 서버와 안드로이드 개발.
+  - Node.js / Express / Android / AWS EC2 / S3 / MongoDB
+
+   <a class="ui black horizontal label" href="/posts/recommend-indie.html">개발 내용</a>
+  <a class="ui black horizontal label" href="https://github.com/jongho123/Recommandation-Indie">소스 코드</a>
+  </div>
+</div>
+</div>
+
+{::comment}
+받은 교육 소개란. 반응형 2개의 컬럼으로 되어있음.
+왼쪽에는 기간, 오른쪽에는 기관, 설명으로 이루어져 있음.
+{:/comment}
+
+<div class="ui hidden divider"></div>
+
+{: .ui .header}
+# Education
+<div class="ui divided grid container">
+
+{::comment}
+국민대학교
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+  2010.03 ~ 2016.08
+  </div>
+
+  <div class="ten wide column">
+
+{: .ui .header}
+### 국민대학교
+컴퓨터공학부. 학사 졸업
+  </div>
+</div>
+
+{::comment}
+경민정보산업공업고등학교
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+  2007.03 ~ 2010.02
+  </div>
+
+  <div class="ten wide column">
+
+{: .ui .header}
+### 경민정보산업공업고등학교
+정보컴퓨터과. 졸업
+  </div>
+</div>
+</div>
+
+{::comment}
+참여한 오픈소스 소개란. 반응형 2개의 컬럼으로 되어있음.
+왼쪽에는 오픈소스명, 오른쪽에는 설명과 링크로 이루어져 있음. 
+{:/comment}
+<div class="ui hidden divider"></div>
+
+{: .ui .header}
+# OpenSource
+<div class="ui divided grid container">
+  <div class="six wide column">
+
+{: .ui .header}
+### DHT-sensor-library
+  </div>
+
+  <div class="ten wide column">
+
+  {: .ui .list}
+  - 온, 습도 센서 라이브러리
+  - Happy hog house 개발 중 누락된 코드를 찾음.
+  - 소소하게 단 한 단어 기여.
+
+  <a class="ui black horizontal label" href="https://github.com/adafruit/DHT-sensor-library">깃허브</a>
+  </div>
+</div>
+
