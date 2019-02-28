@@ -4,6 +4,7 @@ title: Recommend indie
 cover: cover.jpg
 date:  2019-02-28
 last_modified_at: 2019-02-28
+project_date: 201504
 summary: 음악 추천 앱 개발
 categories: posts
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Nurumi Refactoring
 date:  2019-02-22
 last_modified_at: 2019-02-25
+project_date: 201510
 summary: 키보드 앱의 한글 오토마타 리팩토링
 categories: posts
 ---

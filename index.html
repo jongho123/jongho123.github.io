@@ -3,5 +3,5 @@ layout: default
 title: Home
 ---
 
-{% assign pages = site.posts %}
+{% assign pages = site.posts | sort:"project_date" | reverse %}
 {% include project.html %}
