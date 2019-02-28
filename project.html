@@ -1,0 +1,7 @@
+---
+layout: default
+title: Project
+---
+
+{% assign pages = site.posts | sort:"project_date" | reverse %}
+{% include project.html %}

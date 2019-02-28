@@ -6,3 +6,5 @@ highlighter: rouge
 permalink: none
 timezone: Asia/Seoul
 
+plugins:
+  - jekyll-redirect-from

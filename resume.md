@@ -36,6 +36,7 @@ last_modified_at: 2019-02-22
   </div>
   </div>
 </div>
+</div>
 
 {::comment}
 기술 소개란. 반응형 3개의 컬럼으로 되어있음.
