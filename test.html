@@ -1,0 +1,242 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet"
+          type="text/css">
+</head>
+
+<body>
+<div class="ui text container">
+    <div class="ui pointing menu">
+        <a class="blue item active">Resume</a>
+        <a class="blue item">Project</a>
+    </div>
+
+    <div class="ui segment">
+        <!--
+        인물소개란. 반응형 2개의 컬럼으로 되어있음.
+        왼쪽에 이름, 오른쪽에 연락처와 깃허브 링크가 있음.
+        -->
+        <h1 class="ui header">Profile</h1>
+        <div class="ui divided grid container">
+            <div class="six wide column">
+                <p>임 종 호 (Lim Jongho)</p>
+            </div>
+            <div class="ten wide column">
+                <div class="ui list">
+                    <div class="item">
+                        <i class="mail icon"></i>
+                        <div class="content">lbo4126@gmail.com</div>
+                    </div>
+
+                    <div class="item">
+                        <i class="github icon"></i>
+                        <div class="content">
+                            <a href="https://github.com/jongho123">
+                                Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        기술 소개란. 반응형 3개의 컬럼으로 되어있음.
+        상, 중, 하의 순서대로 배치함.
+        -->
+        <div class="ui hidden divider"></div>
+        <h1 class="ui header">Skills</h1>
+        <div class="ui divided three columns grid container">
+            <div class="column">
+                <p class="ui red tag label">잘 이해하고 있음</p>
+                <ul class="ui list">
+                    <li>Java</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <p class="ui blue tag label">프로젝트 경험이 있음</p>
+                <ul class="ui list">
+                    <li>Node.js / Express</li>
+                    <li>Android</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <p class="ui green tag label">간단히 사용해 봄</p>
+                <ul class="ui list">
+                    <li>HTML/CSS</li>
+                    <li>MongoDB</li>
+                    <li>Mysql</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--
+        프로젝트 소개란. 반응형 2개의 컬럼으로 되어있음.
+        왼쪽에는 프로젝트 이름과 오른쪽에 설명, 그리고 링크로 이루어져 있음.
+        -->
+        <div class="ui hidden divider"></div>
+        <h1 class="ui header">Project</h1>
+        <div class="ui divided grid container">
+            <div class="row">
+                <div class="six wide column">
+                    <div class="ui content">
+                        <h3 class="ui header">Happy hog houes</h3>
+                        <div class="description">
+                            <p>2015.11 ~ 2016.02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <ul class="ui list">
+                        <li>고슴도치의 관리 자동화부터 시작</li>
+                        <li>반려동물의 관리 자동화가 목표</li>
+                    </ul>
+                    <a class="ui black horizontal label">개발 내용</a>
+                    <a class="ui black horizontal label">소스 코드</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six wide column">
+                    <div class="content">
+                        <h3 class="ui header">키보드 앱 리팩토링</h3>
+                        <div class="description">
+                            <p>2015.10 ~ 2015.11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <ul class="ui list">
+                        <li>2학기 졸업프로젝트로 다른 팀에 합류</li>
+                        <li>1학기에 만들었던 키보드 앱의 리팩토링</li>
+                        <li>코드의 양을 절반 이상 줄일 수 있었음</li>
+                        <li>자바 패턴 중 상태 패턴 사용</li>
+                    </ul>
+                    <a class="ui black horizontal label">개발 내용</a>
+                    <a class="ui black horizontal label">소스 코드</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six wide column">
+                    <div class="content">
+                        <h3 class="ui header">Sound Tag</h3>
+                        <div class="description">
+                            <p>2015.08 ~ 2015.09</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <ul class="ui list">
+                        <li>STT를 이용한 녹음한 음성에서의 단어 검색 앱</li>
+                        <li>안드로이드와 간단한 단어 빈도수 추출해주는 서버 개발</li>
+                        <li>Node.js / Express / Android</li>
+                    </ul>
+                    <a class="ui black horizontal label">개발 내용</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six wide column">
+                    <div class="content">
+                        <h3 class="ui header">Recommend indie</h3>
+                        <div class="description">
+                            <p>2015.04 ~ 2015. 06</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <ul class="ui list">
+                        <li>음악 추천 API를 이용해 비슷한 음악을 추천해주는 앱</li>
+                        <li>서버와 안드로이드 개발</li>
+                        <li>Node.js / Express / Android / AWS EC2 / S3 / MongoDB etc..</li>
+                    </ul>
+                    <a class="ui black horizontal label">개발 내용</a>
+                    <a class="ui black horizontal label">소스 코드</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--
+        받은 교육 소개란. 반응형 2개의 컬럼으로 되어있음.
+        왼쪽에는 기간, 오른쪽에는 기관, 설명으로 이루어져 있음.
+        -->
+        <div class="ui hidden divider"></div>
+        <h1 class="ui header">Education</h1>
+        <div class="ui divided grid container">
+            <div class="row">
+                <div class="six wide column">
+                    <div class="content">
+                        <div class="description">
+                            <p>2010.03 ~ 2016.08</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <div class="content">
+                        <h3 class="ui header">국민대학교</h3>
+                        <div class="description">
+                            <p>컴퓨터공학부. 학사 졸업</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six wide column">
+                    <div class="content">
+                        <div class="description">
+                            <p>2007.03 ~ 2010.02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <div class="content">
+                        <h3 class="ui header">경민정보산업공업고등학교</h3>
+                        <div class="description">
+                            <p>정보컴퓨터과. 졸업</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        참여한 오픈소스 소개란. 반응형 2개의 컬럼으로 되어있음.
+        왼쪽에는 오픈소스명, 오른쪽에는 기관, 설명으로 이루어져 있음.
+        -->
+        <div class="ui hidden divider"></div>
+        <h1 class="ui header">OpenSource</h1>
+        <div class="ui divided grid container">
+            <div class="row">
+                <div class="six wide column">
+                    <div class="content">
+                        <h3 class="ui header">DHT-sensor-library</h3>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <ul class="ui list">
+                        <li>온, 습도 센서 라이브러리</li>
+                        <li>Happy hog house 개발 중 누락된 코드를 찾음</li>
+                        <li>소소하게 단 한 단어? 기여.</li>
+                    </ul>
+                    <a class="ui black horizontal label">깃허브</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+            crossorigin="anonymous"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+</body>
+</html>
