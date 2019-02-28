@@ -14,7 +14,7 @@ last_modified_at: 2019-02-22
 {: .ui .header}
 # Profile
 
-<div class="ui divided grid container">
+<div class="ui divided stackable grid container">
 
 <div class="six wide column">
 임 종 호 (Lim Jongho)
@@ -26,12 +26,15 @@ last_modified_at: 2019-02-22
   <i class="mail icon"></i>
   lbo4126@gmail.com
   </div>
-  <div>
+  <div class='item'>
   <i class="github icon"></i>
   [Github](https://github.com/jongho123)
   </div>
+  <div class='item'>
+  <i class="coffee icon"></i>
+  [Codewars](https://www.codewars.com/users/jongho123) (심심풀이 알고리즘 사이트)
   </div>
-</div>
+  </div>
 </div>
 
 {::comment}
@@ -44,7 +47,7 @@ last_modified_at: 2019-02-22
 {: .ui .header}
 # Skiils
 
-<div class="ui divided three columns grid container">
+<div class="ui divided stackable three columns grid container">
   <div class="column">
 
   {: .ui .red .tag .label}
@@ -85,7 +88,29 @@ last_modified_at: 2019-02-22
 
 {: .ui .header}
 # Project
-<div class="ui divided grid container">
+<div class="ui divided stackable grid container">
+
+{::comment}
+이력서랑 포트폴리오 정리
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+
+{: .ui .header}
+### 이력서, 포트폴리오 정리
+2019.02 ~
+  </div>
+
+  <div class="ten wide column">
+
+  {: .ui .list}
+  - 개발자로 일할 수 있도록 해보자 다시 맘을 먹음.
+  - 공백 기간이 너무 길어 했던 것들을 정리라도 해보자고 생각했음.
+  - 웹 공부도 해볼겸해서 블로그를 만들어보자 생각함.
+  - jekyll 을 이용해서 깃헙 블로그를 만들어 봄.
+
+  </div>
+</div>
 
 {::comment}
 Happyhoghouse 프로젝트
@@ -101,8 +126,9 @@ Happyhoghouse 프로젝트
   <div class="ten wide column">
 
   {: .ui .list}
-  - 고슴도치 관리 자동화부터 시작
+  - 고슴도치 관리 자동화에서 시작
   - 반려동물의 관리 자동화가 목표
+  - 아두이노 서버(급식기)와 안드로이드 개발
 
   <a class="ui black horizontal label" href="/posts/happy-hog.html">개발 내용</a>
   <a class="ui black horizontal label" href="https://github.com/MyHappyHog/ProjectPrototype">소스 코드</a>
@@ -188,7 +214,7 @@ Happyhoghouse 프로젝트
 
 {: .ui .header}
 # Education
-<div class="ui divided grid container">
+<div class="ui divided stackable grid container">
 
 {::comment}
 국민대학교
@@ -231,7 +257,7 @@ Happyhoghouse 프로젝트
 
 {: .ui .header}
 # OpenSource
-<div class="ui divided grid container">
+<div class="ui divided stackable grid container">
   <div class="six wide column">
 
 {: .ui .header}
