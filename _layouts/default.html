@@ -6,61 +6,30 @@
       <title>Jongho's.blog</title>
       <meta name="viewport" content="width=device-width">
 
-      <!-- syntax highlighting CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="/css/syntax.css">
-
-      <!-- Custom CSS -->
-      <link rel="stylesheet" href="/css/main.css">
-
-      <!-- Responsive CSS -->
-      <link rel="stylesheet" href="/css/responsive.css">
-
-      <!-- Zoom CSS -->
       <link rel="stylesheet" href="/css/zoom.css">
-
-      <!-- Google Fonts -->
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Nanum Gothic Coding:300,400,700' rel='stylesheet' type='text/css'>
 
   </head>
   <body>
-    <div class="site">
-      <div class="sidebar" id="sidebar">
-        <div class="header">
-          <h1 class="title"><a href="/">Jongho's Blog</a></h1>
-          <span class="tagline">e-mail: lbo4126@gmail.com</span>
-        </div>
-
-        <div class="posts">
-          <ul class="posts-list">
-            {% for item in site.data.navigation_title.docs %}
-              <li class="post-link">
-                <a class="post-title" href="{{ item.url }}">
-                  {{ item.title }}
-                </a>
-              </li>
-            {% endfor %}
-
-          </ul>
-        </div>
-
-        <div class="footer">
-          <span id="footer-links">
-            <a href="" class="footer-link">Github</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">Codewars</a>
-          </span>
-        </div>
+    <div class="ui text container">
+      <div class="ui pointing menu">
+        {% for item in site.data.navigation_title.docs %}
+          <a class="blue item" href="{{ item.url }}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
       </div>
 
-        {{ content }}
-
+      {{ content }}
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script src="/scripts/responsive.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
     <script src="/scripts/zoom.js" type="text/javascript"></script>
   </body>
 </html>

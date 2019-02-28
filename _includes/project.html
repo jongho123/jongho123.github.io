@@ -1,15 +1,8 @@
-<div class="content" id="home">
-  <div id="sidebar-button">
-    <img src="/images/sidebar-button.png">
-  </div>
-  <div id="post-info">
-    {% for page in pages %}
-    <div id="info-container">
-      <a href="{{ page.url }}">
-        <h1 id="title">{{ page.title }}</h1>
-        <span id="date">{{ page.summary }}</span>
-      </a>
-    </div>
-    {% endfor %}
-  </div>
+{% for page in pages %}
+<div class="ui segment">
+  <a href="{{ page.url }}">
+    <h1 class="ui header">{{ page.title }}</h1>
+    <p style="color:grey;">{{ page.summary }}</p>
+  </a>
 </div>
+{% endfor %}
