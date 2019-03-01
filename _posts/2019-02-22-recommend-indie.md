@@ -8,6 +8,9 @@ project_date: 201504
 summary: 음악 추천 앱 개발
 categories: posts
 ---
+
+# Recommend Indie
+
 ## 개요
 
 - 프로젝트 기반의 수업에서 했던 프로젝트

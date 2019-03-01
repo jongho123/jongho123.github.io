@@ -109,6 +109,8 @@ last_modified_at: 2019-02-22
   - 웹 공부도 해볼겸해서 블로그를 만들어보자 생각함.
   - jekyll 을 이용해서 깃헙 블로그를 만들어 봄.
 
+  <a class="ui black horizontal label" href="https://github.com/jongho123/jongho123.github.io">소스 코드</a>
+
   </div>
 </div>
 
