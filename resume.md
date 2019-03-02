@@ -54,7 +54,7 @@ last_modified_at: 2019-02-22
   {: .ui .red .tag .label}
   잘 이해하고 있음
 
-  {: .ui list}
+  {: .ui .list}
   - Java
   </div>
 

@@ -6,5 +6,10 @@ highlighter: rouge
 permalink: none
 timezone: Asia/Seoul
 
+# 플러그인
 plugins:
   - jekyll-redirect-from
+
+# 구글 UA
+google_analytics: UA-135448322-1
+

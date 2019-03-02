@@ -10,6 +10,9 @@
       <link rel="stylesheet" href="/css/syntax.css">
       <link rel="stylesheet" href="/css/zoom.css">
 
+      {% if site.google_analytics %}
+      {% include analytics.html %}
+      {% endif %}
   </head>
   <body>
     <div class="ui text container">
