@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2019-02-16
-last_modified_at: 2019-02-22
+last_modified_at: 2019-03-28
 ---
 
 {::options parse_block_html="true" /}
@@ -74,9 +74,10 @@ last_modified_at: 2019-02-22
   간단히 사용해 봄
 
   {: .ui .list}
-  - HTML / CSS
-  - MongoDB
+  - Vue.js
+  - Typescript
   - Mysql
+  - MongoDB
   </div>
 </div>
 
@@ -90,6 +91,33 @@ last_modified_at: 2019-02-22
 {: .ui .header}
 # Project
 <div class="ui divided stackable grid container">
+
+{::comment}
+Todo 웹 페이지 개발
+{:/comment}
+<div class="row">
+  <div class="six wide column">
+
+{: .ui .header}
+### Todo 웹 페이지
+2019.03 ~
+  </div>
+
+  <div class="ten wide column">
+
+  {: .ui .list}
+  - 웹 개발 연습 겸 Todo 페이지를 만들어 보자 생각했음. 
+  - 간단한 Todo 페이지와 로그인 페이지 작성. 
+  - 로그인과 Todo 사이트에 필요한 API 작성.
+  - 유저 정보와 Todo 데이터를 저장할 데이터베이스 설계 및 구성.
+  - 개발한 코드들을 테스트 해볼 테스트 코드 작성.
+  - Vue.js / Typescript / Node.js / Express / Mysql / 테스트 툴.
+
+  <a class="ui black horizontal label" href="https://github.com/jongho123/VueFrontPractice">프론트 소스 코드</a>
+  <a class="ui black horizontal label" href="https://github.com/jongho123/NodeBackendPractice">서버 소스 코드</a>
+
+  </div>
+</div>
 
 {::comment}
 이력서랑 포트폴리오 정리
@@ -128,9 +156,9 @@ Happyhoghouse 프로젝트
   <div class="ten wide column">
 
   {: .ui .list}
-  - 고슴도치 관리 자동화에서 시작
-  - 반려동물의 관리 자동화가 목표
-  - 아두이노 서버(급식기)와 안드로이드 개발
+  - 고슴도치 관리 자동화에서 시작.
+  - 반려동물의 관리 자동화가 목표.
+  - Android / Arduino Webserver / Dropbox API / Facebook API / 오픈소스 기여
 
   <a class="ui black horizontal label" href="/posts/happy-hog.html">개발 내용</a>
   <a class="ui black horizontal label" href="https://github.com/MyHappyHog/ProjectPrototype">소스 코드</a>
@@ -146,15 +174,15 @@ Happyhoghouse 프로젝트
 {: .ui .header}
 ### 키보드 앱 리팩토링
 2015.10 ~ 2015.11
-  </div>
+  </div> 
 
   <div class="ten wide column">
 
   {: .ui .list}
-  - 2학기 졸업프로젝트로 다른 팀에 합류
-  - 1학기에 만들었던 키보드 앱의 리팩토링
+  - 2학기 졸업프로젝트로 다른 팀에 합류.
+  - 1학기에 만들었던 키보드 앱의 리팩토링.
   - 코드의 양을 절반 이상 줄일 수 있었음.
-  - 자바 패턴 중 상태 패턴 사용
+  - Android / Java Pattern (State pattern)
 
   <a class="ui black horizontal label" href="/posts/nurumi-refactoring.html">개발 내용</a>
   <a class="ui black horizontal label" href="https://github.com/2015nlpcapstone/Nurumi">소스 코드</a>

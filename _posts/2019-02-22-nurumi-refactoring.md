@@ -36,7 +36,8 @@ categories: posts
     적게는 2단계 깊게는 4단계까지 다양했고 버퍼의 케이스마다 IF문을 구성.
     ~~~java
       // Before
-      // 종성의 상태일 때 입력된 값이 모음인지 확인하고 중성의 값이 'ㅗ' 일때 입력된 값이 'ㅏ' 이면 중성에 있던 값을 'ㅘ'로 변경해주는 코드
+      // 종성의 상태일 때 입력된 값이 모음인지 확인하고 
+      // 중성의 값이 'ㅗ', 입력된 값이 'ㅏ' 이면 중성에 있던 값을 'ㅘ'로 변경해주는 코드
       private void LEVEL_JONG_SEONG() {
           KoreanCharacter temp = kMap.get(motion);
 
@@ -45,8 +46,13 @@ categories: posts
                   if(temp.getCharNum() == AH.getCharNum()){
                       ic.deleteSurroundingText(1, 0);
                       buffer[JUNG_SEONG] = kMap.get(18L); // 을 으로
-                      setText(String.format("%c", generate_korean_char_code(buffer[CHO_SEONG].getCharNum(),
-                            buffer[JUNG_SEONG].getCharNum(), 0)));
+                      setText(
+                        String.format(
+                          "%c", 
+                          generate_korean_char_code(buffer[CHO_SEONG].getCharNum(),
+                          buffer[JUNG_SEONG].getCharNum(), 0)
+                        )
+                      );
                       automata_level = LEVEL_JONG_SEONG;
                   }
               ....
@@ -83,23 +89,10 @@ categories: posts
     ~~~
     - 공통된 코드의 분리로 짧아져서 이해하기 쉬워 짐.
     ~~~java
-        // Before
-        // 종성의 상태일 때 입력된 값이 모음인지 확인하고 
-        // 중성의 값이 'ㅗ' 일때 입력된 값이 'ㅏ' 이면 중성에 있던 값을 'ㅘ'로 변경해주는 코드
-        KoreanCharacter temp = kMap.get(motion);
-
-        if(temp.getType() == MOEUM) {
-            if(buffer[JUNG_SEONG].getCharNum() == OH.getCharNum()) {
-                if(temp.getCharNum() == AH.getCharNum()){
-                    ic.deleteSurroundingText(1, 0);
-                    buffer[JUNG_SEONG] = kMap.get(18L); // 을 으로
-                    setText(String.format("%c", generate_korean_char_code(buffer[CHO_SEONG].getCharNum(),
-                          buffer[JUNG_SEONG].getCharNum(), 0)));
-                    automata_level = LEVEL_JONG_SEONG;
-                  ...
-
-        // After
-        // 키보드 클래스에서는 단순히 합쳐질 수 있는 값인지 아닌지만 판단하고 오토마타에 넘김
+      // After
+      // 키보드 클래스에서는 단순히 합쳐질 수 있는 값인지 아닌지만 판단하고 오토마타에 넘김
+      // 조건문 깊이는 이전 값과 이후 값 2단계
+      protected KoreanCharacter buildBokJaEum(KoreanCharacter first, KoreanCharacter second) {
         ...
         switch (first.getName()) {
           case 'ㅗ':
@@ -108,17 +101,22 @@ categories: posts
           ...
         }
         return bolMoEum;
+      }
    ~~~
     
     - 오토마타 코드의 일반화로 코드의 양이 줄고 이해하기 좋아짐.
     ~~~java
-        // 오토마타 코드
-        // 종성에 모음이 입력 되었을 때 복모음으로 만들 수 있으면 변경해주는 코드
-        else if (inputChar instanceof Vowel) {
-            if ((tempBuildBokMoEum = korean.buildBokMoEum(buffer[1], buffer[2])) != null) {
-                buffer[1] = tempBuildBokMoEum;
-                result = String.format("%c", korean.generate_korean_char_code(((Consonant) buffer[0]).getCharNumCho(), 
-                                       buffer[1].getCharNum(), 0));
+      // 오토마타 코드
+      // 종성에 모음이 입력 되었을 때 복모음으로 만들 수 있으면 변경해주는 코드
+      else if (inputChar instanceof Vowel) {
+          if ((tempBuildBokMoEum = korean.buildBokMoEum(buffer[1], buffer[2])) != null) {
+              buffer[1] = tempBuildBokMoEum;
+              result = String.format("%c", 
+                                     korean.generate_korean_char_code(
+                                         ((Consonant) buffer[0]).getCharNumCho(), 
+                                         buffer[1].getCharNum(), 
+                                         0)
+                                    );
     ~~~
 
     - 팀원들도 이전보다 확실히 코드가 보기 편해졌다고 평가
@@ -139,7 +137,6 @@ categories: posts
       public String buildCharacter(AutomataStateContext context, KoreanCharacter inputChar, KoreanCharacter buffer[]) {
         ...
         Korean korean = context.getKorean();
-
         ...
         if ((tempBuildBokMoEum = korean.buildBokMoEum(buffer[0], inputChar)) != null) {
         ...
