@@ -150,7 +150,7 @@ Happyhoghouse 프로젝트
   
 {: .ui .header}
 ### Happy hog house
-2015.11 ~ 2016.02
+2015.11 ~ 2016.05
   </div>
 
   <div class="ten wide column">
